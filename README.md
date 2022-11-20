@@ -84,12 +84,12 @@ python manage.py createsuperuser
 
 #### Главная страница с табилцей:
 
-![img.png](img/img.png)
+![img.png](img/img1.png)
 
 #### Отсортированная по названию альбома:
 
-![img_2.png](img/img_2.png)
+![img_2.png](img/img2.png)
 
 #### Отсортировано по названию артиста:
 
-![img_1.png](img/img_1.png)
+![img_1.png](img/img3.png)
