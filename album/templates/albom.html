@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+    <table border="1">
+        <tr>
+            <th>album</th>
+            <th>name
+                <form action="" method="get" name="artist">
+                    <input type="submit" name="sort" value="name_sort">
+                </form>
+            </th>
+            <th>artist
+                <form action="" method="get" name="artist">
+                    <input type="submit" name="sort" value="artist_sort">
+                </form>
+            </th>
+            <th>tracks</th>
+        </tr>
+        {% for album in albums %}
+            <tr>
+                <th>{{ album.album }}</th>
+                <th>{{ album.name }}</th>
+                <th>{{ album.artist }}</th>
+                <th>{% for tr in album.tracks %}
+                    <p>{{ tr }}</p>
+                    {% endfor %}
+
+                    </th>
+            </tr>
+        {% endfor %}
+    </table>
+
+
+
+</body>
+</html>
